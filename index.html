@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botón con Redirección</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            background-color: #560458; 
+            margin: 0;
+        }
+
+        .boton-brillo {
+            padding: 10px 20px; 
+            font-size: 16px; 
+            cursor: pointer; 
+            border: none;   
+            border-radius: 5px;
+            background-color: #2e12ac;
+            color: rgb(0, 0, 0);      
+            transition: box-shadow 0.7s ease;
+        }
+
+        .boton-brillo:hover {
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.8); 
+        }
+    </style>
+</head>
+<body>
+    <button class="boton-brillo" onclick="mostrarMensaje()">clic aqui amor ^w^</button>
+
+    <script>
+        function mostrarMensaje() {
+            alert("Quería decirte que me gustas mucho y que he hecho esta página especialmente para ti. Es la primera vez que hago algo así, porque realmente eres alguien especial para mí. Recuerdo cuando me distes la carta de amor y me gusto mucho espero que te guste estas flores te amo mucho mi amorcita bella ^w^");
+            window.location.href = "flor.html"; // Redirige a otra página
+        }
+    </script>
+</body>
+</html>

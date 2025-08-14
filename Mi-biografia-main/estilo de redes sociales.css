@@ -1,0 +1,25 @@
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .redes-sociales a {
+    margin: 0 10px;
+  }
+  
+  .redes-sociales img {
+    width: 40px; /* Ajusta el tamaño según tus necesidades */
+  }
+  
+.Mis-Redes-Sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-no-disponible{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

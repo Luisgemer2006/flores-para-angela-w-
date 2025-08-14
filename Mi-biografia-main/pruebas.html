@@ -1,0 +1,17 @@
+<!-- Video de YouTube en modal -->
+<img src="imagenesparaweb/mario galaxy.jpg" height="200" width="350" id="youtubeImg" style="cursor:pointer;">
+
+<div id="youtubeModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:1000;">
+  <iframe id="youtubeFrame" width="700" height="400" src="https://www.youtube.com/embed/rmN8DHZYNCg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <button onclick="cerrarYoutubeModal()" style="position:absolute; top:20px; right:40px; font-size:2em; background:none; color:white; border:none; cursor:pointer;">×</button>
+</div>
+
+<script>
+document.getElementById('youtubeImg').onclick = function() {
+  document.getElementById('youtubeModal').style.display = 'flex';
+};
+
+function cerrarYoutubeModal() {
+  document.getElementById('youtubeModal').style.display = 'none';
+}
+</script>
